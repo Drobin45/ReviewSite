@@ -1,24 +1,83 @@
 ﻿body {
     padding-top: 50px;
     padding-bottom: 20px;
+    background-image: url('../Images/BeachOne.jpg');
 }
 
-/* Set padding to keep content from hitting the edges */
 .body-content {
     padding-left: 15px;
     padding-right: 15px;
 }
 
-/* Override the default bootstrap behavior where horizontal description lists 
-   will truncate terms that are too long to fit in the left column 
-*/
 .dl-horizontal dt {
     white-space: normal;
 }
 
-/* Set width on the form input elements since they're 100% wide by default */
 input,
 select,
 textarea {
     max-width: 280px;
 }
+
+div#categories {
+    
+    align-content: center;
+    border: groove;
+    background-color: #E3FFF5;
+    margin: 15px;
+}
+
+#homepage {
+    border: groove;
+    background-color: #E3FFF5;
+}
+
+#homeHeader {
+    border: groove;
+    background-color: #E3FFF5;
+    margin-bottom: 550px;
+}
+
+#reviewHead {
+     border: groove;
+    background-color: #E3FFF5;    
+}
+
+#reviewTop{
+    border: groove;
+    background-color: #E3FFF5;
+    margin-top: 20px;
+}
+
+#reviewBody {
+    border: groove;
+    background-color: #E3FFF5;
+    margin: 30px;
+    align-items:center;
+}
+
+#categoriesHead {
+    border: groove;
+    background-color: #E3FFF5;
+}
+
+#details {
+    border: groove;
+    background-color: #E3FFF5;
+}
+
+#catEditHeader {
+    border: groove;
+    background-color: #E3FFF5;
+}
+
+#catDetailsHead {
+    border: groove;
+    background-color: #E3FFF5;
+}
+
+#reviewEditBody {
+    border: groove;
+    background-color: #E3FFF5;
+}
+

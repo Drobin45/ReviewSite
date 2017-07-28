@@ -1,57 +1,40 @@
 ﻿@model IEnumerable<ReviewSite.Models.Reviews>
 
 @{
-    ViewBag.Title = "Index";
+    ViewBag.Title = "Reviews";
 }
+<div id="reviewHead">
+    <h2>Reviews</h2>
 
-<h2>Index</h2>
+    <p>
+        @Html.ActionLink("Submit Travel Review", "Create")
+    </p>
+</div>
 
-<p>
-    @Html.ActionLink("Create New", "Create")
-</p>
-<table class="table">
-    <tr>
-        <th>
-            @Html.DisplayNameFor(model => model.Categories.CategoryName)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Author)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Title)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Content)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.PublishDate)
-        </th>
-        <th></th>
-    </tr>
+<div id="reviewTop">
+    <b>
+        @Html.DisplayNameFor(model => model.Author) :
+        @Html.DisplayNameFor(model => model.Title)
+    </b>
+</div>
+<div class="row">
+    @foreach (var item in Model)
+    {
+        <div class="col-md-4" id="reviewBody">
 
-@foreach (var item in Model) {
-    <tr>
-        <td>
-            @Html.DisplayFor(modelItem => item.Categories.CategoryName)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Author)
-        </td>
-        <td>
+            <p></p>
+            <p></p>
+            <p></p>
+            @Html.DisplayFor(modelItem => item.Author) :
             @Html.DisplayFor(modelItem => item.Title)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Content)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.PublishDate)
-        </td>
-        <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.ReviewID }) |
-            @Html.ActionLink("Details", "Details", new { id=item.ReviewID }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.ReviewID })
-        </td>
-    </tr>
-}
+            <p></p>
+            <p></p>
+            <p></p>
+            @Html.ActionLink("Edit", "Edit", new { id = item.ReviewID })
+            @Html.ActionLink("Details", "Details", new { id = item.ReviewID })
+            @Html.ActionLink("Delete", "Delete", new { id = item.ReviewID })
+        </div>
+    }
 
-</table>
+</div>
+
