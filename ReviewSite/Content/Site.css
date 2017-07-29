@@ -1,23 +1,74 @@
-﻿body {
+﻿/*BODY OF FULL WEBSITE*/
+
+body {
     padding-top: 50px;
     padding-bottom: 20px;
     background-image: url('../Images/BeachOne.jpg');
 }
-
 .body-content {
     padding-left: 15px;
     padding-right: 15px;
 }
-
 .dl-horizontal dt {
     white-space: normal;
 }
-
 input,
 select,
 textarea {
     max-width: 280px;
 }
+
+ /*HOMEPAGE*/
+
+#homepage {
+    border: groove;
+    background-color: #E3FFF5;
+}
+#homeHeader {
+    border: groove;
+    background-color: #E3FFF5;
+    margin-bottom: 550px;
+}
+#homeHeader h1{
+    font-family: 'Bellefair', serif;
+}
+
+/*REVIEW PAGES*/
+
+#reviewHead {
+     border: groove;
+    background-color: #E3FFF5; 
+    font-family: 'Bellefair', serif;   
+}
+#reviewTop{
+    border: groove;
+    background-color: #E3FFF5;
+    margin-top: 20px;
+}
+#reviewBody {
+    border: groove;
+    background-color: #E3FFF5;
+    margin: 30px;
+    align-items:center;
+}
+#revDetailsHeader{
+     border: groove;
+    background-color: #E3FFF5;
+}
+#details {
+    border: groove;
+    background-color: #E3FFF5;
+}
+#reviewEditBody {
+    border: groove;
+    background-color: #E3FFF5;
+}
+#revCreate {
+    border: groove;
+    background-color: #E3FFF5;
+}
+
+ /*CATEROGIES PAGES*/
 
 div#categories {
     
@@ -26,57 +77,26 @@ div#categories {
     background-color: #E3FFF5;
     margin: 15px;
 }
-
-#homepage {
-    border: groove;
-    background-color: #E3FFF5;
-}
-
-#homeHeader {
-    border: groove;
-    background-color: #E3FFF5;
-    margin-bottom: 550px;
-}
-
-#reviewHead {
-     border: groove;
-    background-color: #E3FFF5;    
-}
-
-#reviewTop{
-    border: groove;
-    background-color: #E3FFF5;
-    margin-top: 20px;
-}
-
-#reviewBody {
-    border: groove;
-    background-color: #E3FFF5;
-    margin: 30px;
-    align-items:center;
-}
-
 #categoriesHead {
     border: groove;
     background-color: #E3FFF5;
 }
-
-#details {
-    border: groove;
-    background-color: #E3FFF5;
+#categoriesHead h2{
+    font-family: 'Bellefair', serif;
 }
-
 #catEditHeader {
     border: groove;
     background-color: #E3FFF5;
 }
-
 #catDetailsHead {
     border: groove;
     background-color: #E3FFF5;
 }
-
-#reviewEditBody {
+#catDetailsHeader {
+    border: groove;
+    background-color: #E3FFF5;
+}
+#catCreate {
     border: groove;
     background-color: #E3FFF5;
 }
